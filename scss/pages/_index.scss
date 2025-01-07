@@ -1,0 +1,266 @@
+.card {
+  margin-bottom: 7rem;
+
+  &__container {
+    display: flex;
+    gap: 11.5rem;
+  }
+
+  &__text {
+    width: 44rem;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 4rem;
+  }
+
+  &__texts {
+    width: 49.7rem;
+    font-weight: 400;
+    @include typography(1.6rem, 1.5, 0);
+    margin-bottom: 3.8rem;
+  }
+
+  &__button {
+    background-color: $text-hover;
+    color: $text-light;
+    width: 20.8rem;
+    height: 4.7rem;
+    padding: 9px 19px 17px 20px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29.38px;
+  }
+  &__image {
+    max-width: 275px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3.4rem;
+  }
+
+  .card__text {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 31.2rem;
+    height: 12rem;
+  }
+
+  .card__texts {
+    text-align: center;
+    width: 100%;
+    width: 32.8rem;
+    height: 9.6rem;
+    margin-bottom: 5rem;
+  }
+
+  .card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.post {
+  background: rgba(237, 247, 250, 1);
+
+  &__text {
+    margin-top: 1rem;
+    margin-bottom: 2.6rem;
+  }
+  &__posts {
+    display: flex;
+    gap: 2rem;
+  }
+  &__item {
+    width: 41.8rem;
+    height: 29.5rem;
+    padding-top: 2.4rem;
+    padding-left: 2.3rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 3.2rem;
+  }
+  &__texts {
+    margin-bottom: 1.7rem;
+    font-weight: 700;
+  }
+  &__content {
+    display: flex;
+    gap: 5rem;
+  }
+  &__bar {
+    border-color: black;
+    padding-right: 2.7rem;
+    border-right: 1px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-style: solid;
+    margin-bottom: 1.1rem;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.44px;
+  }
+
+  &__text-one {
+    max-width: 36.8rem;
+  }
+
+  &__items {
+    width: 41.8rem;
+    height: 29.5rem;
+    padding-top: 2.4rem;
+    padding-left: 2.3rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .post__text {
+    text-align: center;
+  }
+
+  .post__posts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post__item {
+    width: 35.4rem;
+    height: 26.6rem;
+    padding-top: 1.2rem;
+    padding-left: 1.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .post__items {
+    width: 35.4rem;
+    height: 26.6rem;
+    padding-top: 1.2rem;
+    padding-left: 1.9rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .post__text-one {
+    max-width: 31.4rem;
+  }
+}
+
+.work {
+  margin-top: 1.5rem;
+
+  &__text {
+    margin-bottom: 2.2rem;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  &__title-one {
+    display: flex;
+    gap: 1.8rem;
+    margin-bottom: 3.1rem;
+    border-bottom: 1px solid $text-muted;
+    padding-bottom: 1.5rem;
+  }
+  &__image {
+    border-radius: 6px;
+  }
+
+  &__texts {
+    font-weight: 700;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+    margin-bottom: 1.7rem;
+  }
+
+  &__span {
+    font-weight: 900;
+  }
+
+  &__a {
+    width: 6.2rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 1.6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  &__text-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.38px;
+    color: $text-muted;
+  }
+  &__p {
+    width: 59rem;
+  }
+  &__title-two {
+    display: flex;
+    gap: 1.8rem;
+    margin-bottom: 3.1rem;
+    border-bottom: 1px solid $text-muted;
+    padding-bottom: 3.5rem;
+  }
+  &__title-three {
+    display: flex;
+    gap: 1.8rem;
+    margin-bottom: 8.3rem;
+    border-bottom: 1px solid $text-muted;
+    padding-bottom: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work__title-one {
+    flex-direction: column;
+  }
+
+  .work__title-two {
+    flex-direction: column;
+  }
+
+  .work__title-three {
+    flex-direction: column;
+  }
+
+  .work__text {
+    text-align: center;
+  }
+
+  .work__image {
+    width: 100%;
+    height: 23rem;
+  }
+
+  .work__p {
+    width: 34.4rem;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 5.1rem;
+
+  &__item {
+    gap: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2.6rem;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.56px;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}

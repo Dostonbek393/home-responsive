@@ -3,8 +3,182 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="card__container container">
+        <div class="card__discription">
+          <h1 class="card__text">Hi, I am John, Creative Technologist</h1>
+          <p class="card__texts">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <a class="card__button" href="">
+            <span class="card__title">Download Resume</span>
+          </a>
+        </div>
+
+        <picture>
+          <source
+            srcset="./images/Ellipse.mobile.png"
+            media="(max-width:375px)"
+          />
+          <img class="card__image" src="./images/Ellipse.desktop.png" alt="" />
+        </picture>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="post">
+        <div class="post__container container">
+          <h3 class="post__text">Recent posts</h3>
+
+          <div class="post__posts">
+            <div class="post__item">
+              <h2 class="post__texts">Making a design system from scratch</h2>
+              <div class="post__content">
+                <div class="post__bar">
+                  <h3 class="post__title">12 Feb 2020</h3>
+                </div>
+                <h3 class="post__title">Design, Pattern</h3>
+              </div>
+              <p class="post__text-one">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+
+            <div class="post__items">
+              <h2 class="post__texts">Creating pixel perfect icons in Figma</h2>
+              <div class="post__content">
+                <div class="post__bar">
+                  <h3 class="post__title">12 Feb 2020</h3>
+                </div>
+                <h3 class="post__title">Figma, Icon Design</h3>
+              </div>
+              <p class="post__text-one">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="work__container container">
+          <h3 class="work__text">Featured works</h3>
+
+          <div class="work__title">
+            <div class="work__title-one">
+              <img
+                class="work__image"
+                src="./images/Rectangle 30.png"
+                alt=""
+                width="246"
+                height="180"
+              />
+              <div class="work__discription">
+                <h2 class="work__texts">Designing Dashboards</h2>
+                <div class="work__content">
+                  <a class="work__a" href="">
+                    <span class="work__span">2020</span>
+                  </a>
+                  <h3 class="work__text-title">Dashboard</h3>
+                </div>
+                <p class="work__p">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+
+            <div class="work__title-two">
+              <img
+                class="work__image"
+                src="./images/Rectangle 32.png"
+                alt=""
+                width="246"
+                height="180"
+              />
+              <div class="work__discription">
+                <h2 class="work__texts">Vibrant Portraits of 2020</h2>
+                <div class="work__content">
+                  <a class="work__a" href="">
+                    <span class="work__span">2018</span>
+                  </a>
+                  <h3 class="work__text-title">Illustration</h3>
+                </div>
+                <p class="work__p">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+
+            <div class="work__title-three">
+              <img
+                class="work__image"
+                src="./images/Rectangle 34.png"
+                alt=""
+                width="246"
+                height="180"
+              />
+              <div class="work__discription">
+                <h2 class="work__texts">36 Days of Malayalam type</h2>
+                <div class="work__content">
+                  <a class="work__a" href="">
+                    <span class="work__span">2018</span>
+                  </a>
+                  <h3 class="work__text-title">Typography</h3>
+                </div>
+                <p class="work__p">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__item">
+          <img src="./images/fb.png" alt="" class="footer__image" />
+          <img src="./images/insta.png" alt="" class="footer__image" />
+          <img src="./images/Group.png" alt="" class="footer__image" />
+          <img src="./images/Linkedin.png" alt="" class="footer__image" />
+        </div>
+        <h4 class="footer__text">Copyright ©2020 All rights reserved</h4>
+      </div>
+    </footer>
+  </body>
 </html>
